@@ -164,7 +164,7 @@ jobs:
           git checkout
           mv *.appex ${{ github.workspace }}
 
-  - name: Clone YouTubeHeader
+      - name: Clone YouTubeHeader
         if: ${{ inputs.enable_youpip || inputs.enable_ytuhd || inputs.enable_yq || inputs.enable_ryd || inputs.enable_demc || inputs.enable_yts || inputs.enable_ytabconfig }}
         run: |
           if [ -d "$THEOS/include/YouTubeHeader" ]; then
